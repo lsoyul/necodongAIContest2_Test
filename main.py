@@ -1,5 +1,5 @@
-import player1;
-import player2;
+import player1
+import player2
 
 cards = ('5', '4', '3', '2', '1', '!')
 
@@ -10,51 +10,51 @@ def winner_decision(player1_card, player2_card):
 
     if player1_card == '5':
         if player2_card == '5':
-            return 0;
+            return 0
         elif player2_card == '2' or player2_card == '3' or player2_card == '4' or player2_card == '!':
-            return 1;
+            return 1
         else:
-            return 2;
+            return 2
 
     elif player1_card == '4':
         if player2_card == '4':
-            return 0;
+            return 0
         elif player2_card == '2' or player2_card == '3' or player2_card == '1':
-            return 1;
+            return 1
         else:
-            return 2;
+            return 2
 
     elif player1_card == '3':
         if player2_card == '3':
-            return 0;
+            return 0
         elif player2_card == '1' or player2_card == '2' or player2_card == '!':
-            return 1;
+            return 1
         else:
-            return 2;
+            return 2
 
     elif player1_card == '2':
         if player2_card == '2':
-            return 0;
+            return 0
         elif player2_card == '1':
-            return 1;
+            return 1
         else:
-            return 2;
+            return 2
 
     elif player1_card == '1':
         if player2_card == '1':
-            return 0;
+            return 0
         elif player2_card == '!' or player2_card == '5':
-            return 1;
+            return 1
         else:
-            return 2;
+            return 2
 
     elif player1_card == '!':
         if player2_card == '!':
-            return 0;
+            return 0
         elif player2_card == '2' or player2_card == '4':
-            return 1;
+            return 1
         else:
-            return 2;
+            return 2
 
 
 class stateOfPlay:
